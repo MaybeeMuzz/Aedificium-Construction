@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aedificium Construction</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+
+            <div class="logo-box">
+                <img src="Logo.png" alt="Aedificium Construction" class="logo-img">
+                <div class="logo-text">
+                    <h2>AEDIFICIUM</h2>
+                    <span>CONSTRUCTION</span>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about"      data-lang="navAbout"      class="nav-link">Tentang</a></li>
+                <li><a href="#vision"     data-lang="navVision"     class="nav-link">Visi & Misi</a></li>
+                <li><a href="#service"    data-lang="navService"    class="nav-link">Layanan</a></li>
+                <li><a href="#philosophy" data-lang="navPhilosophy" class="nav-link">Filosofi</a></li>
+                <li><a href="#culture"    data-lang="navCulture"    class="nav-link">Budaya</a></li>
+                <li><a href="#founder"    data-lang="navFounder"    class="nav-link">Founder</a></li>
+                <li><a href="#contact"    data-lang="navContact"    class="nav-link">Kontak</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang-code="id">ID</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang-code="en">EN</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="drawer-menu">
+            <li><a href="#about"      data-lang="navAbout"      class="drawer-link">Tentang</a></li>
+            <li><a href="#vision"     data-lang="navVision"     class="drawer-link">Visi & Misi</a></li>
+            <li><a href="#service"    data-lang="navService"    class="drawer-link">Layanan</a></li>
+            <li><a href="#philosophy" data-lang="navPhilosophy" class="drawer-link">Filosofi</a></li>
+            <li><a href="#culture"    data-lang="navCulture"    class="drawer-link">Budaya</a></li>
+            <li><a href="#founder"    data-lang="navFounder"    class="drawer-link">Founder</a></li>
+            <li><a href="#contact"    data-lang="navContact"    class="drawer-link">Kontak</a></li>
+        </ul>
+        <div class="drawer-lang">
+            <button class="lang-btn active" data-lang-code="id">ID</button>
+            <button class="lang-btn" data-lang-code="en">EN</button>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-lines"></div>
+        <div class="container hero-wrapper">
+            <div class="hero-text reveal-left">
+                <span class="hero-eyebrow" data-lang="heroLabel">COMPANY PROFILE</span>
+                <h1 data-lang="heroTitle">AEDIFICIUM<br><em>CONSTRUCTION</em></h1>
+                <p data-lang="heroText">Perusahaan konstruksi modern yang bergerak pada bidang perancangan bangunan, desain interior, eksterior, pembangunan rumah tinggal, bangunan umum, dan konsep green building yang estetis, profesional, serta berkelanjutan.</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn-primary" data-lang="heroBtn">Jelajahi Perusahaan</a>
+                    <a href="#contact" class="btn-ghost" data-lang="heroContact">Hubungi Kami</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>2022</strong><span data-lang="statFounded">Berdiri</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><strong>4+</strong><span data-lang="statServices">Layanan</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><strong>100%</strong><span data-lang="statCommit">Komitmen</span></div>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right">
+                <div class="hero-card">
+                    <div class="hero-card-inner">
+                        <img src="Logo.png" alt="Aedificium Construction Logo" class="hero-logo-img">
+                    </div>
+                    <div class="hero-card-tag">Build Better Future</div>
+                </div>
+                <div class="hero-deco-dot dot-1"></div>
+                <div class="hero-deco-dot dot-2"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-eyebrow" data-lang="aboutSmall">TENTANG PERUSAHAAN</span>
+                <h2 data-lang="aboutTitle">About Company</h2>
+                <div class="section-rule"></div>
+            </div>
+            <div class="about-wrapper">
+                <div class="about-image-wrap reveal-left">
+                    <div class="about-img-card">
+                        <img src="Logo.png" alt="Aedificium Logo" class="about-logo-img">
+                    </div>
+                    <div class="about-badge">
+                        <i class="fa-solid fa-award"></i>
+                        <span data-lang="aboutBadge">Profesional & Bersertifikat</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <p data-lang="aboutText1">Aedificium Construction merupakan perusahaan yang bergerak pada bidang konstruksi dan telah berdiri sejak Agustus 2022.</p>
+                    <p data-lang="aboutText2">Perusahaan ini telah berpartisipasi dalam perancangan rumah tinggal, dekorasi, bangunan umum, interior, eksterior, serta berbagai kebutuhan konstruksi lainnya.</p>
+                    <p data-lang="aboutText3">Dengan tenaga arsitek dan estimator profesional serta bersertifikat, kami tidak hanya membangun bangunan, tetapi juga menciptakan ruang yang estetik dengan menerapkan konsep green building.</p>
+                    <div class="about-pillars">
+                        <div class="pillar reveal-up" style="--d:.1s">
+                            <div class="pillar-icon"><i class="fa-solid fa-building"></i></div>
+                            <h4>Construction</h4>
+                        </div>
+                        <div class="pillar reveal-up" style="--d:.2s">
+                            <div class="pillar-icon"><i class="fa-solid fa-house"></i></div>
+                            <h4>Architecture</h4>
+                        </div>
+                        <div class="pillar reveal-up" style="--d:.3s">
+                            <div class="pillar-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <h4>Green Building</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section id="vision" class="section section-dark">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <span class="section-eyebrow light" data-lang="visionSmall">VISI & MISI</span>
+                <h2 data-lang="visionTitle">Tujuan dan Arah Perusahaan</h2>
+                <div class="section-rule center"></div>
+            </div>
+            <div class="vision-grid">
+                <div class="vision-card reveal-up" style="--d:.1s">
+                    <div class="vision-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3 data-lang="visionTitle2">Visi</h3>
+                    <p data-lang="visionText">Menjadi perusahaan konstruksi terdepan dalam industri jasa konstruksi, real property, interior dan eksterior design yang berkembang secara berkelanjutan melalui komitmen Good Corporate Governance (GCG) dan Corporate Social Responsibility (CSR).</p>
+                </div>
+                <div class="vision-card reveal-up" style="--d:.2s">
+                    <div class="vision-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3 data-lang="missionTitle">Misi</h3>
+                    <ul class="mission-list">
+                        <li data-lang="missionItem1">Memastikan kepercayaan dan kepuasan client.</li>
+                        <li data-lang="missionItem2">Membangun SDM unggul di bidang konstruksi.</li>
+                        <li data-lang="missionItem3">Menerapkan efisiensi biaya, tenaga dan teknologi.</li>
+                        <li data-lang="missionItem4">Menjadi perusahaan terpercaya dan berkualitas.</li>
+                        <li data-lang="missionItem5">Menyediakan jasa konstruksi profesional.</li>
+                        <li data-lang="missionItem6">Meningkatkan kompetensi melalui investasi dan partnership.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section id="service" class="section">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <span class="section-eyebrow" data-lang="serviceSmall">OUR SERVICE</span>
+                <h2 data-lang="serviceTitle">Layanan Perusahaan</h2>
+                <div class="section-rule center"></div>
+            </div>
+            <div class="service-grid">
+                <div class="service-card reveal-up" style="--d:.05s">
+                    <div class="service-num">01</div>
+                    <div class="service-icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+                    <h3 data-lang="service1Title">Rancangan Gambar</h3>
+                    <p data-lang="service1Text">Perancangan gambar proyek dalam bentuk 2D dan 3D sesuai kebutuhan client.</p>
+                </div>
+                <div class="service-card reveal-up" style="--d:.1s">
+                    <div class="service-num">02</div>
+                    <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h3 data-lang="service2Title">Perhitungan RAB</h3>
+                    <p data-lang="service2Text">Perhitungan rencana anggaran biaya proyek secara detail dan efisien.</p>
+                </div>
+                <div class="service-card reveal-up" style="--d:.15s">
+                    <div class="service-num">03</div>
+                    <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3 data-lang="service3Title">Rencana RKS</h3>
+                    <p data-lang="service3Text">Penyusunan spesifikasi teknik, uraian pekerjaan dan lingkup proyek konstruksi.</p>
+                </div>
+                <div class="service-card reveal-up" style="--d:.2s">
+                    <div class="service-num">04</div>
+                    <div class="service-icon"><i class="fa-solid fa-building-circle-check"></i></div>
+                    <h3 data-lang="service4Title">Design Interior & Exterior</h3>
+                    <p data-lang="service4Text">Perencanaan rumah tinggal, kantor, bangunan umum, dekorasi dan tata ruang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILOSOFI -->
+    <section id="philosophy" class="section section-tinted">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <span class="section-eyebrow" data-lang="philoSmall">FILOSOFI LOGO</span>
+                <h2 data-lang="philoTitle">Makna Logo Perusahaan</h2>
+                <div class="section-rule center"></div>
+            </div>
+            <div class="philosophy-layout">
+                <div class="philo-logo-wrap reveal-left">
+                    <div class="philo-logo-card">
+                        <img src="Logo.png" alt="Aedificium Logo" class="philo-logo-img">
+                    </div>
+                </div>
+                <div class="philo-content reveal-right">
+                    <div class="philo-block">
+                        <h3 data-lang="philoNameTitle">Filosofi Nama</h3>
+                        <ul class="philo-name-list">
+                            <li><strong>Aedificium</strong> — <span data-lang="philoName1">berarti bangunan, fondasi, pembangunan, dan kekuatan.</span></li>
+                            <li><strong>Construction</strong> — <span data-lang="philoName2">melambangkan fokus perusahaan pada jasa konstruksi, desain, pembangunan dan arsitektur.</span></li>
+                        </ul>
+                    </div>
+                    <div class="philo-block">
+                        <h3 data-lang="philoShapeTitle">Filosofi Bentuk</h3>
+                        <p data-lang="philoShapeText">Bentuk geometris segitiga pada logo melambangkan stabilitas, arah pertumbuhan, ketegasan, dan perkembangan perusahaan secara berkelanjutan.</p>
+                    </div>
+                    <div class="philo-block">
+                        <h3 data-lang="philoColorTitle">Filosofi Warna</h3>
+                        <div class="color-swatches">
+                            <div class="swatch-item">
+                                <div class="swatch blue-swatch"></div>
+                                <p data-lang="philoBlueText">Biru — profesionalisme, kepercayaan, kestabilan dan teknologi konstruksi.</p>
+                            </div>
+                            <div class="swatch-item">
+                                <div class="swatch orange-swatch"></div>
+                                <p data-lang="philoOrangeText">Orange — energi, kreativitas, inovasi dan semangat membangun.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CULTURE -->
+    <section id="culture" class="section">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <span class="section-eyebrow" data-lang="cultureSmall">BUDAYA PERUSAHAAN</span>
+                <h2 data-lang="cultureTitle">Budaya Kerja Kami</h2>
+                <div class="section-rule center"></div>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card reveal-up" style="--d:.1s">
+                    <div class="culture-num">01</div>
+                    <h3 data-lang="culture1Title">Integritas</h3>
+                    <p data-lang="culture1Text">Jujur, konsisten, setia dan bertanggung jawab demi mewujudkan visi misi perusahaan.</p>
+                </div>
+                <div class="culture-card reveal-up" style="--d:.2s">
+                    <div class="culture-num">02</div>
+                    <h3 data-lang="culture2Title">Profesionalisme</h3>
+                    <p data-lang="culture2Text">Senantiasa meningkatkan kompetensi, memberikan pelayanan terbaik, sopan, ramah dan komunikatif kepada client.</p>
+                </div>
+                <div class="culture-card reveal-up" style="--d:.3s">
+                    <div class="culture-num">03</div>
+                    <h3 data-lang="culture3Title">Selalu Berkembang</h3>
+                    <p data-lang="culture3Text">Berusaha untuk terus berkembang secara kreatif dan inovatif di segala bidang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section id="founder" class="section section-dark">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <span class="section-eyebrow light" data-lang="founderSmall">FOUNDER</span>
+                <h2 data-lang="founderTitle">Pendiri Perusahaan</h2>
+                <div class="section-rule center"></div>
+            </div>
+            <div class="founder-wrapper">
+                <div class="founder-img-wrap reveal-left">
+                    <img src="founder.png" alt="Muhammad Azka Aulia" class="founder-img">
+                    <div class="founder-frame"></div>
+                </div>
+                <div class="founder-content reveal-right">
+                    <p class="founder-eyebrow" data-lang="founderSmall">Founder & CEO</p>
+                    <h3 class="founder-name">Muhammad Azka Aulia</h3>
+                    <span class="founder-role" data-lang="founderRole">Founder & CEO — Aedificium Construction</span>
+                    <p data-lang="founderText1">Muhammad Azka Aulia merupakan pendiri Aedificium Construction yang berfokus pada pengembangan jasa konstruksi, perancangan bangunan, serta solusi desain interior dan eksterior dengan mengutamakan kualitas, estetika, dan profesionalisme.</p>
+                    <p data-lang="founderText2">Aedificium Construction dibangun untuk menghadirkan layanan konstruksi yang terencana, terpercaya, dan berorientasi pada kebutuhan client, dengan memperhatikan kualitas pekerjaan, efisiensi, serta konsep pembangunan yang berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header center reveal-up">
+                <span class="section-eyebrow" data-lang="contactSmall">KONTAK</span>
+                <h2 data-lang="contactTitle">Hubungi Kami</h2>
+                <div class="section-rule center"></div>
+            </div>
+            <div class="contact-layout reveal-up">
+                <div class="contact-info-col">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-detail">
+                            <h4>Gmail</h4>
+                            <p>advancedcomputing25@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="contact-detail">
+                            <h4>Instagram</h4>
+                            <p>@advanced.computing_</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-detail">
+                            <h4>Contact Person</h4>
+                            <p>+62 821-8471-8924</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social-col">
+                    <p class="social-label" data-lang="socialLabel">Temukan kami di</p>
+                    <div class="social-grid">
+                        <a href="https://wa.me/6282184718924" target="_blank" class="social-card whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.instagram.com/aedificium.construction/" target="_blank" class="social-card instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com/MaybeeMuzz" target="_blank" class="social-card github">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-azka-1204213ab/" target="_blank" class="social-card linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="Logo.png" alt="Logo" class="footer-logo">
+                <span>AEDIFICIUM CONSTRUCTION</span>
+            </div>
+            <p class="footer-copy">© 2022 Aedificium Construction — Building Tomorrow, Together</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
